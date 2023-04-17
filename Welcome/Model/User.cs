@@ -11,6 +11,8 @@ public class User
         Email = email;
         Password = password;
     }
+    
+    public User(){}
 
     public string Name { get; set; }
 
