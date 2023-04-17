@@ -20,9 +20,20 @@ namespace StudentInfoSystem
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Student _student;
         public MainWindow()
         {
+            _student = new Student();
+            _student.FullName = "Damyan Kaloyan Mihov";
+            _student.Course = 3;
+            _student.Faculty = "FCST";
+            _student.Status = "Active";
+            _student.Group = 42;
+            _student.Potok = 9;
+            _student.Speciality = "KSI";
+            _student.EducationLevel = "Bachelor";
             InitializeComponent();
+            this.DataContext = _student;
         }
     }
 }

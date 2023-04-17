@@ -5,8 +5,52 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StudentInfoSystem"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Student Info" Height="450" Width="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top"> test </TextBlock>
+        <StackPanel>
+            <GroupBox Width="400" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="3" Padding="3">
+                <ListBox BorderBrush="White">
+                    <StackPanel Orientation="Horizontal">
+                        <Label HorizontalAlignment="Center" VerticalAlignment="Center">Name</Label>
+                        <Canvas Width="10"></Canvas>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="80" Text="{Binding FullName}"></TextBlock>
+                    </StackPanel>
+                </ListBox> 
+            </GroupBox>
+            <GroupBox Width="200" Height="230" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="3" Padding="3">
+                <ListBox BorderBrush="White">
+                    <StackPanel Orientation="Horizontal">
+                        <Label HorizontalAlignment="Center" VerticalAlignment="Center">Faculty</Label>
+                        <Canvas Width="10"></Canvas>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="80" Text="{Binding Faculty}"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label HorizontalAlignment="Center" VerticalAlignment="Center">Specialty</Label>
+                        <Canvas Width="10"></Canvas>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="80" Text="{Binding Speciality}"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label HorizontalAlignment="Center" VerticalAlignment="Center">Status</Label>
+                        <Canvas Width="10"></Canvas>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="80" Text="{Binding Status}"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label HorizontalAlignment="Center" VerticalAlignment="Center">Course</Label>
+                        <Canvas Width="10"></Canvas>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="80" Text="{Binding Course}"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label HorizontalAlignment="Center" VerticalAlignment="Center">Potok</Label>
+                        <Canvas Width="10"></Canvas>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="80" Text="{Binding Potok}"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label HorizontalAlignment="Center" VerticalAlignment="Center">Group</Label>
+                        <Canvas Width="10"></Canvas>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="80" Text="{Binding Group}"></TextBlock>
+                    </StackPanel>
+                </ListBox> 
+            </GroupBox>
+        </StackPanel>
     </Grid>
 </Window>
