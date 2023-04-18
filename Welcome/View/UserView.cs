@@ -42,7 +42,6 @@ public class UserView
     {
         Console.WriteLine("Welcome");
         Console.WriteLine("User: " + _userModelView.Name);
-        Console.WriteLine("Role: " + _userModelView.Type);
     }
 
     public void DisplayError()

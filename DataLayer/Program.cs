@@ -10,7 +10,6 @@ using (var context = new DatabaseContext())
         Email = "user@email.com",
         FacultyNumber = "121220xxx",
         Password = "1234",
-        Type = UserType.NORMAL
     });
     context.SaveChanges();
     var users = context.Users.ToList();

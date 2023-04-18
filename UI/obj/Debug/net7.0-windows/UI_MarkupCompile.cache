@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\Damyan\RiderProjects\Welcome1\UI\App.xaml
-2799999530
+41048301541
 
-4-1028568017
-219-737839928
-Components\StudentList.xaml;Windows\MainWindow.xaml;
+6739649647
+236-734367558
+Components\DBTest.xaml;Components\Student.xaml;Components\StudentList.xaml;Windows\MainWindow.xaml;
 
-False
+True
 

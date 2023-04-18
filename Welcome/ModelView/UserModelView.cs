@@ -34,10 +34,4 @@ public class UserModelView
         get => _user.Name;
         set => _user.Name = value;
     }
-
-    public UserType Type
-    {
-        get => _user.Type;
-        set => _user.Type = value;
-    } 
 }

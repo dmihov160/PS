@@ -6,7 +6,8 @@ namespace DataLayer.Database;
 public class DatabaseContext : DbContext
 {
     public DbSet<DatabaseUser> Users { get; set; }
-    
+    public DbSet<DatabaseStudent> Students { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         string solutionFolder = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
@@ -24,7 +25,6 @@ public class DatabaseContext : DbContext
             Name = "Damyan Mihov",
             Password = "1323",
             Email = "dmihov@tu-sofia.bg",
-            Type = UserType.ADMIN,
             FacultyNumber = "121220160"
         };
 
