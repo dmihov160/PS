@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Controls;
 using System.Windows.Documents;
 using DataLayer.Model;
@@ -14,9 +15,9 @@ public partial class StudentList : UserControl
     {
         InitializeComponent();
         _studentService = new StudentService();
+        var allStudents = _studentService.GetAllStudents().ToList();
+        students.DataContext = allStudents;
         InitStudents();
-        var list = _studentService.GetAllStudents();
-        students.DataContext = list;
     }
 
     private void InitStudents()

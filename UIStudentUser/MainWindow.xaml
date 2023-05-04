@@ -9,7 +9,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Label>Students</Label>
         <local2:StudentList x:Name="studentsList" Padding="2" />
+        <Label>Users</Label>
         <local3:UserList x:Name="userList" Padding="2" />
     </Grid>
 </Window>
